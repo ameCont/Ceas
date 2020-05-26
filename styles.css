@@ -6,6 +6,11 @@
 body {
     background: linear-gradient(to right, hsl(200, 100%, 50%), 
     hsl(175, 100%, 50%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .clock {
@@ -23,6 +28,7 @@ body {
     height: 100%;
     text-align: center;
     transform: rotate(var(--rotation));
+    font-size: 1.5rem;
 }
 
 .clock .number1 { --rotation: 30deg;}
@@ -61,6 +67,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 50%;
 }
 
 .clock .hand.second {
